@@ -1,12 +1,18 @@
 import yfinance as yf
 from support_resistance import calculate_levels
-
-SP500 = ["AAPL","MSFT","NVDA","AMZN","GOOGL","META","TSLA"]  # replace with full list
+from pytickersymbols import PyTickerSymbols
 
 
 def get_top_breakout():
 
+    stock_data = PyTickerSymbols()
+    SP500_stocks = stock_data.get_stocks_by_index('S&P 500')
+    SP500 = [stock['symbol'] for stock in SP500_stocks]
+#    print(f"Loaded {list(SP500)} SP500 tickers.")
+#SP500 = ["AAPL","MSFT","NVDA","AMZN","GOOGL","META","TSLA","GLW","MU","LITE"]  # replace with full list
+
     for ticker in SP500:
+        print(f"Checking {ticker} for breakout...")
         df = yf.download(ticker, period="6mo", interval="1d", progress=False, multi_level_index=False)
 
         if df.empty:

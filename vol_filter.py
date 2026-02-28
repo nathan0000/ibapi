@@ -2,8 +2,8 @@ import yfinance as yf
 
 
 def get_vol_data():
-    vix = yf.download("^VIX", period="5d", interval="1d", progress=False)
-    vix3m = yf.download("^VIX3M", period="5d", interval="1d", progress=False)
+    vix = yf.download("^VIX", period="5d", interval="1d", progress=False, multi_level_index=False)
+    vix3m = yf.download("^VIX3M", period="5d", interval="1d", progress=False, multi_level_index=False)
 
     return vix["Close"].iloc[-1], vix3m["Close"].iloc[-1]
 

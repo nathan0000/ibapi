@@ -11,13 +11,14 @@ RISK_PER_TRADE = 3000
 
 
 def get_last_price(symbol):
-    df = yf.download(symbol, period="1d", interval="1m", progress=False)
+    df = yf.download(symbol, period="1d", interval="1m", progress=False, multi_level_index=False)
     return df["Close"].iloc[-1]
 
 
 if __name__ == "__main__":
 
     vol = classify_vol_regime()
+    print(f"Current volatility regime: {vol['regime']} with size factor {vol['size_factor']}")
 
     if vol["regime"] == "PANIC":
         print("Skipping due to high volatility")
@@ -33,8 +34,10 @@ if __name__ == "__main__":
     direction = signal["signal"]
 
     last_price = get_last_price(ticker)
+    print(f"Selected {ticker} with signal {direction} at price {last_price}")
 
     contract = select_option(ticker, last_price, direction)
+    print(f"Selected option: {contract.symbol} {contract.lastTradeDateOrContractMonth} {contract.strike} {contract.right}")
 
     assumed_premium = last_price * 0.05
     adjusted_risk = RISK_PER_TRADE * vol["size_factor"]
@@ -42,19 +45,19 @@ if __name__ == "__main__":
     contracts = max(1, int(adjusted_risk / (assumed_premium * 100)))
 
     trader = IBKROptionsTrader()
-    trader.connect("127.0.0.1", 7497, clientId=21)
+    trader.connect("127.0.0.1", 4002, clientId=21)
     trader.start()
     time.sleep(3)
 
-    trader.market_order(contract, contracts)
+    trader.market_option_order(contract.symbol, last_price=last_price, signal=direction, quantity=contracts)
 
     # Start monitoring
     pnl = IBKRPnLMonitor()
-    pnl.connect("127.0.0.1", 7497, clientId=22)
+    pnl.connect("127.0.0.1", 4002, clientId=22)
     pnl.start()
 
     greeks = IBKRGreeksMonitor()
-    greeks.connect("127.0.0.1", 7497, clientId=23)
+    greeks.connect("127.0.0.1", 4002, clientId=23)
     greeks.start()
     time.sleep(3)
     greeks.subscribe_option(contract)
