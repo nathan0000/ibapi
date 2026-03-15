@@ -1,0 +1,10 @@
+# IBKR Day Trading System Requirements
+
+# IBKR Native Python API (install from IBKR website or pip)
+ibapi==10.19.01
+
+# Timezone handling
+pytz>=2023.3
+
+# Optional: for enhanced logging and monitoring
+colorlog>=6.7.0

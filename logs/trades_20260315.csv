@@ -1,0 +1,1 @@
+timestamp,order_id,symbol,sec_type,expiry,strike,right,action,quantity,fill_price,commission,realized_pnl,tag,vix_regime,vix_value,account_pnl

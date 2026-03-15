@@ -1,0 +1,31 @@
+{
+  "date": "2026-03-15",
+  "account_id": "DU3232524",
+  "baseline_pnl": 0.0,
+  "vix_history": [
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity
+  ],
+  "strategy_trade_counts": {
+    "ES_Momentum": 0,
+    "SPX_0DTE": 0,
+    "ES_Options": 0
+  },
+  "last_saved": "2026-03-15 18:23:40"
+}

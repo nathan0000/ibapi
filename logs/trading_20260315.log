@@ -1,0 +1,227 @@
+18:14:40.675 | INFO     | Main                 | Logging initialized at level INFO
+18:14:40.676 | INFO     | Main                 | ============================================================
+18:14:40.676 | INFO     | Main                 |   IBKR DAY TRADING SYSTEM
+18:14:40.677 | INFO     | Main                 |   Mode: PAPER
+18:14:40.677 | INFO     | Main                 |   Connect: 127.0.0.1:7497 (clientId=1)
+18:14:40.677 | INFO     | Main                 |   Time: 2026-03-15 18:14:40
+18:14:40.677 | INFO     | Main                 | ============================================================
+18:14:40.678 | INFO     | Main                 | Connecting to TWS/Gateway at 127.0.0.1:7497...
+18:14:40.679 | ERROR    | TradingApp           | IBKR Error [1773558880679] reqId=-1: 502
+18:14:40.679 | WARNING  | TradingApp           | Connection to TWS/Gateway closed.
+18:14:55.730 | ERROR    | Main                 | Failed to connect within timeout. Check TWS/Gateway is running.
+18:20:26.756 | INFO     | Main                 | Logging initialized at level INFO
+18:20:26.759 | INFO     | Main                 | ============================================================
+18:20:26.760 | INFO     | Main                 |   IBKR DAY TRADING SYSTEM
+18:20:26.760 | INFO     | Main                 |   Mode: PAPER
+18:20:26.762 | INFO     | Main                 |   Connect: 127.0.0.1:4002 (clientId=1)
+18:20:26.764 | INFO     | Main                 |   Time: 2026-03-15 18:20:26
+18:20:26.769 | INFO     | Main                 | ============================================================
+18:20:26.770 | INFO     | Main                 | Connecting to TWS/Gateway at 127.0.0.1:4002...
+18:20:27.027 | INFO     | TradingApp           | Connection acknowledged by TWS/Gateway.
+18:20:27.620 | INFO     | TradingApp           | Next valid order ID: 1
+18:20:27.640 | INFO     | Main                 | Connected successfully. Starting trading system...
+18:20:27.640 | INFO     | TradingApp           | Initializing subsystems...
+18:20:27.649 | INFO     | TradeJournal         | Trade journal created: logs/trades_20260315.csv
+18:20:27.682 | WARNING  | TradingApp           | Connection to TWS/Gateway closed.
+18:20:28.153 | INFO     | StatePersistence     | No saved state for today — starting fresh.
+18:20:28.155 | INFO     | MarketData           | Subscribing to market data...
+18:22:03.234 | INFO     | Main                 | Logging initialized at level INFO
+18:22:03.237 | INFO     | Main                 | ============================================================
+18:22:03.237 | INFO     | Main                 |   IBKR DAY TRADING SYSTEM
+18:22:03.237 | INFO     | Main                 |   Mode: PAPER
+18:22:03.237 | INFO     | Main                 |   Connect: 127.0.0.1:4002 (clientId=1)
+18:22:03.238 | INFO     | Main                 |   Time: 2026-03-15 18:22:03
+18:22:03.238 | INFO     | Main                 | ============================================================
+18:22:03.238 | INFO     | Main                 | Connecting to TWS/Gateway at 127.0.0.1:4002...
+18:22:03.262 | INFO     | TradingApp           | Connection acknowledged by TWS/Gateway.
+18:22:03.289 | INFO     | TradingApp           | Next valid order ID: 1
+18:22:03.294 | ERROR    | TradingApp           | IBKR Error [1773559322524] reqId=-1: 2104
+18:22:03.300 | ERROR    | TradingApp           | IBKR Error [1773559322525] reqId=-1: 2107
+18:22:03.310 | ERROR    | TradingApp           | IBKR Error [1773559322531] reqId=-1: 2158
+18:22:03.372 | INFO     | Main                 | Connected successfully. Starting trading system...
+18:22:03.377 | INFO     | TradingApp           | Initializing subsystems...
+18:22:03.576 | DEBUG    | TradingApp           | Account data download complete for DU3232524
+18:22:03.883 | INFO     | StatePersistence     | No saved state for today — starting fresh.
+18:22:03.883 | INFO     | MarketData           | Subscribing to market data...
+18:22:03.884 | DEBUG    | MarketData           | ES subscription: mktdata=1001, bars=1002
+18:22:03.884 | DEBUG    | MarketData           | SPX subscription: 1003
+18:22:03.885 | DEBUG    | MarketData           | VIX subscription: 1004
+18:22:03.885 | INFO     | MarketData           | Market data subscriptions requested.
+18:22:04.320 | ERROR    | TradingApp           | IBKR Error [1773559323577] reqId=1001: 321
+18:22:04.693 | ERROR    | TradingApp           | IBKR Error [1773559323948] reqId=1002: 200
+18:22:04.885 | INFO     | VIXAnalyzer          | VIX Analyzer started.
+18:22:04.886 | INFO     | EODManager           | EOD Manager started.
+18:22:04.887 | INFO     | Strategy             | Strategy Engine started.
+18:22:04.888 | INFO     | StatePersistence     | State persistence started.
+18:22:04.888 | INFO     | TradingApp           | All subsystems initialized and running.
+18:22:05.241 | ERROR    | TradingApp           | IBKR Error [1773559324495] reqId=-1: 2119
+18:22:05.737 | ERROR    | TradingApp           | IBKR Error [1773559324994] reqId=-1: 2119
+18:22:05.912 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:05
+18:22:06.897 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:06
+18:22:07.526 | ERROR    | TradingApp           | IBKR Error [1773559326344] reqId=-1: 2104
+18:22:07.910 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:06
+18:22:08.914 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:07
+18:22:09.918 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:08
+18:22:10.922 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:09
+18:22:11.926 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:10
+18:22:12.940 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:11
+18:22:13.933 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:12
+18:22:14.892 | ERROR    | Strategy             | Strategy eval error: 'EODManager' object has no attribute 'close_started'
+Traceback (most recent call last):
+  File "/Users/nathanwang/projects/ibapi/trading_system/strategy_engine.py", line 508, in _run_loop
+    self._evaluate_all()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nathanwang/projects/ibapi/trading_system/strategy_engine.py", line 516, in _evaluate_all
+    if self.app.eod_manager.close_started:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EODManager' object has no attribute 'close_started'
+18:22:14.895 | ERROR    | Alerts               | [03:22:14] CRITICAL | VIX Regime:  → EXTREME: VIX=inf. Size multiplier adjusted accordingly.
+18:22:14.916 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:14.935 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:13
+18:22:15.938 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:14
+18:22:16.941 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:15
+18:22:17.945 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:16
+18:22:18.948 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:17
+18:22:19.920 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:19.952 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:18
+18:22:20.956 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:19
+18:22:21.958 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:20
+18:22:22.964 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:21
+18:22:23.967 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:22
+18:22:24.926 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:24.970 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:23
+18:22:25.974 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:24
+18:22:26.976 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:25
+18:22:27.985 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:26
+18:22:28.983 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:27
+18:22:29.927 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:29.986 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:28
+18:22:31.068 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:29
+18:22:32.070 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:30
+18:22:33.072 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:31
+18:22:34.075 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:32
+18:22:34.896 | DEBUG    | StatePersistence     | State saved to state/session_20260315.json
+18:22:34.932 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:35.079 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:33
+18:22:36.084 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:34
+18:22:37.088 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:35
+18:22:38.093 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:36
+18:22:39.096 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:37
+18:22:39.938 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:40.100 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:38
+18:22:41.103 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:39
+18:22:42.106 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:40
+18:22:43.110 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:41
+18:22:44.116 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:42
+18:22:44.920 | ERROR    | Strategy             | Strategy eval error: 'EODManager' object has no attribute 'close_started'
+Traceback (most recent call last):
+  File "/Users/nathanwang/projects/ibapi/trading_system/strategy_engine.py", line 508, in _run_loop
+    self._evaluate_all()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nathanwang/projects/ibapi/trading_system/strategy_engine.py", line 516, in _evaluate_all
+    if self.app.eod_manager.close_started:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EODManager' object has no attribute 'close_started'
+18:22:44.940 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:45.119 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:43
+18:22:46.123 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:44
+18:22:47.126 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:45
+18:22:48.129 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:47
+18:22:49.132 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:48
+18:22:49.941 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:50.136 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:49
+18:22:51.139 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:50
+18:22:52.142 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:51
+18:22:53.146 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:52
+18:22:54.149 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:53
+18:22:54.947 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:22:55.153 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:54
+18:22:56.156 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:55
+18:22:57.162 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:56
+18:22:58.165 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:57
+18:22:59.167 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:58
+18:22:59.948 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:00.170 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:22:59
+18:23:01.174 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:00
+18:23:02.179 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:01
+18:23:03.182 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:02
+18:23:04.185 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:03
+18:23:04.892 | INFO     | PnLMonitor           | P&L | NLV: $250,229.96 | Unrealized: $   +0.00 | Realized: $   +0.00 | Total: $   +0.00 | Drawdown: $0.00
+18:23:04.910 | DEBUG    | StatePersistence     | State saved to state/session_20260315.json
+18:23:04.952 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:05.189 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:04
+18:23:06.192 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:05
+18:23:07.195 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:06
+18:23:08.198 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:07
+18:23:09.203 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:08
+18:23:09.958 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:10.206 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:09
+18:23:11.209 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:10
+18:23:12.214 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:11
+18:23:13.218 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:12
+18:23:14.221 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:13
+18:23:14.924 | ERROR    | Strategy             | Strategy eval error: 'EODManager' object has no attribute 'close_started'
+Traceback (most recent call last):
+  File "/Users/nathanwang/projects/ibapi/trading_system/strategy_engine.py", line 508, in _run_loop
+    self._evaluate_all()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nathanwang/projects/ibapi/trading_system/strategy_engine.py", line 516, in _evaluate_all
+    if self.app.eod_manager.close_started:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EODManager' object has no attribute 'close_started'
+18:23:14.962 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:15.224 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:14
+18:23:16.227 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:15
+18:23:17.230 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:16
+18:23:18.233 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:17
+18:23:19.236 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:18
+18:23:19.968 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:20.240 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:19
+18:23:21.243 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:20
+18:23:22.247 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:21
+18:23:23.250 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:22
+18:23:24.255 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:23
+18:23:24.974 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:25.258 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:24
+18:23:26.261 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:25
+18:23:27.262 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:26
+18:23:28.265 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:27
+18:23:29.270 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:28
+18:23:29.975 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:30.273 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:29
+18:23:31.276 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:30
+18:23:32.279 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:31
+18:23:33.283 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:32
+18:23:34.286 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:33
+18:23:34.919 | DEBUG    | StatePersistence     | State saved to state/session_20260315.json
+18:23:34.981 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:35.291 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:34
+18:23:36.295 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:35
+18:23:37.298 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:36
+18:23:38.303 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:37
+18:23:39.305 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:38
+18:23:39.984 | DEBUG    | VIXAnalyzer          | VIX=inf | Regime=EXTREME 🔴 | IVRank=50% | SizeMult=0.0x
+18:23:40.117 | WARNING  | Main                 | Shutdown signal received (signal 2)
+18:23:40.118 | INFO     | TradingApp           | Initiating graceful shutdown...
+18:23:40.307 | INFO     | Main                 | Shutting down...
+18:23:40.307 | INFO     | EODManager           | Emergency close: no positions to close.
+18:23:40.310 | DEBUG    | TradingApp           | Server time: 2026-03-15 18:23:39
+18:23:40.312 | DEBUG    | StatePersistence     | State saved to state/session_20260315.json
+18:23:40.312 | INFO     | TradeJournal         | =======================================================
+18:23:40.313 | INFO     | TradeJournal         |   SESSION REPORT  —  20260315
+18:23:40.314 | INFO     | TradeJournal         | =======================================================
+18:23:40.316 | INFO     | TradeJournal         |   Trades:            0  (W:0 L:0)
+18:23:40.320 | INFO     | TradeJournal         |   Win Rate:        0.0%
+18:23:40.323 | INFO     | TradeJournal         |   Profit Factor:   inf
+18:23:40.323 | INFO     | TradeJournal         |   Gross P&L:    $     +0.00
+18:23:40.323 | INFO     | TradeJournal         |   Commission:   $     +0.00
+18:23:40.324 | INFO     | TradeJournal         |   Net P&L:      $     +0.00
+18:23:40.324 | INFO     | TradeJournal         |   Best Trade:   $     +0.00
+18:23:40.324 | INFO     | TradeJournal         |   Worst Trade:  $     +0.00
+18:23:40.325 | INFO     | TradeJournal         |   Avg Win:      $     +0.00
+18:23:40.325 | INFO     | TradeJournal         |   Avg Loss:     $     +0.00
+18:23:40.326 | INFO     | TradeJournal         |   Journal file: logs/trades_20260315.csv
+18:23:40.326 | INFO     | TradeJournal         | =======================================================
+18:23:40.327 | WARNING  | TradingApp           | Connection to TWS/Gateway closed.
+18:23:40.331 | INFO     | TradingApp           | Disconnected from IBKR.
+18:23:40.331 | INFO     | Main                 | System stopped.
