@@ -36,7 +36,8 @@ def run_pipeline():
                 ticker,
                 period="6mo",
                 interval="1d",
-                progress=False
+                progress=False,
+                multi_level_index=False
             )
 
             if len(df) < 100:
